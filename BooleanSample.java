@@ -1,23 +1,17 @@
 public class BooleanSample {
     public static void main(String[] args) {
         
-        if (!hasPermission(123)) {
-            throw new RuntimeException();
-        }
+        hasPermission(123);
 
-        if (!hasPermission(456)) {
-            throw new RuntimeException();
-        }
+        hasPermission(456);
 
-        if (!hasPermission(789)) {
-            throw new RuntimeException();
-        }
-
+        hasPermission(789);
     }
 
 
     public static boolean hasPermission(int i) {
-
-        return i % 2;
+        if (i % 2 == 0) {
+            throw new RuntimeException();
+        }
     }
 }
