@@ -2,10 +2,6 @@ public class BooleanSample {
     public static void main(String[] args) {
         
         hasPermission(123);
-
-        hasPermission(456);
-
-        hasPermission(789);
     }
 
 
